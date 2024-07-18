@@ -1,0 +1,22 @@
+FROM node:20.13.1
+
+# Set working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install 
+
+# Copy the rest of the application
+COPY . .
+
+# Copy env
+RUN cp .env.local .env
+
+# Expose the port your API will be listening on
+EXPOSE 3030
+
+# Start the FeatherJS API
+CMD [ "npm", "start" ]

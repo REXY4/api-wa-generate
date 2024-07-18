@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "risk_chat_bot": "^1.0.3",
+    "socket.io": "^4.7.5"
+  },
+  "name": "api-wa",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "rexy4",
+    "email": "muhammadrzki96@gmail.com"
+  },
+  "license": "ISC",
+  "description": ""
+}
